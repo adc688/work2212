@@ -12,6 +12,7 @@
           </div>
         </div>
       </template>
+      
       <el-form :model="form" label-width="100" :rules="rules" ref="formRef">
         <el-form-item v-if="!editInfo" label="Title" prop="title">
           <el-input v-model="form.title" />
