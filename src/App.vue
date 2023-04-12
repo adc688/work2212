@@ -6,20 +6,20 @@
       @edit="edit"
       @delete="deleteItem"
     ></TaskTable>
-    <DialogInfo
+    <AddTask
       ref="dialogRef"
       :tableData="tableData"
       :editInfo="editInfo"
       @handleSubmit="handleSubmit"
       @add="added"
-    ></DialogInfo>
+    ></AddTask>
   </div>
 </template>
 
 <script>
 import { ref } from 'vue';
 import Banner from './components/Banner.vue';
-import DialogInfo from './components/DialogInfo.vue';
+import AddTask from './components/AddTask.vue';
 import TaskTable from './components/TaskTable.vue';
 
 export default {
@@ -27,7 +27,7 @@ export default {
   components: {
     Banner,
     TaskTable,
-    DialogInfo,
+    AddTask,
   },
   setup() {
     let editInfo = ref(null);

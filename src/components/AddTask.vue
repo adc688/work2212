@@ -59,7 +59,7 @@ import { toRefs, ref, reactive } from 'vue';
 import { h } from 'vue';
 import { ElMessage } from 'element-plus';
 export default {
-  name: 'DialogInfo',
+  name: 'AddTask',
   props: { editInfo: Object, tableData: Array },
   setup(props, { emit }) {
     const rules = reactive({
