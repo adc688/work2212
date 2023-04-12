@@ -9,26 +9,29 @@
         <el-checkbox v-model="scope.row.completed" />
       </template>
     </el-table-column>
-    <el-table-column prop="action" width="250" label="Action">
+    <el-table-column prop="action" width="200" label="Action">
       <template #default="scope">
-        <el-button
-          class="update-button"
-          type="primary"
-          @click="updateRow(scope.row)"
-          v-show="!scope.row.completed"
-        >
-          <el-icon><Edit /></el-icon>
-          Update
-        </el-button>
-        <el-button
-          class="delete-button"
-          type="danger"
-          @click="deleteRow(scope.row)"
-        >
-          <el-icon><Remove /></el-icon>
-          Delete
-        </el-button>
-      </template>
+  <div>
+    <div>
+      <el-button
+        class="update-button"
+        type="primary"
+        @click="updateRow(scope.row)"
+        v-show="!scope.row.completed"
+      >
+        <el-icon><Edit /></el-icon>Update</el-button>
+    </div>
+    <div>
+      <el-button
+        class="delete-button"
+        type="danger"
+        @click="deleteRow(scope.row)"
+      >
+        <el-icon><Remove /></el-icon>Delete</el-button>
+    </div>
+  </div>
+</template>
+
     </el-table-column>
   </el-table>
 </template>
