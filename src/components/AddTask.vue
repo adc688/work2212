@@ -3,13 +3,13 @@
     <el-dialog width="380px" @open="open" @closed="closed" v-model="show">
       <template #header="{ close, titleId, titleClass }">
         <div class="my-header">
-          <h4 id="titleId" class="titleClass">
+          <div id="titleId" class="titleClass">
             <el-icon>
               <Edit v-if="editInfo" />
               <CirclePlus v-else />
             </el-icon>
             {{ editInfo ? 'Edit Task' : 'Add Task' }}
-          </h4>
+          </div>
         </div>
       </template>
       <el-form :model="form" label-width="100" :rules="rules" ref="formRef">
@@ -113,10 +113,10 @@ export default {
     function certain() {
       formRef.value.validate().then(() => {
         if (props.editInfo) {
-          ElMessage.success('The task was edited successfully');
+          ElMessage.success('The task is edited successfully!');
           Object.assign(props.editInfo, form.value);
         } else {
-          ElMessage.success('The task was added successfully');
+          ElMessage.success('The task is added successfully!');
           emit('add', form.value);
         }
         show.value = false;
@@ -162,5 +162,9 @@ export default {
   justify-content: space-between;
   background-color: #1669f8;
   color: white;
+}
+.titleClass{
+  font-size: 25px;
+  font-weight: bold;
 }
 </style>

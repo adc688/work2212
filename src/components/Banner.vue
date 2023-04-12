@@ -1,10 +1,10 @@
 <template>
   <div class="banner">
-    <h4 class="title">
+    <div class="title">
       <el-icon><List /></el-icon>
       FRAMEWORK
       <AddButton class="button" @click="add"></AddButton>
-    </h4>
+    </div>
   </div>
 </template>
 
