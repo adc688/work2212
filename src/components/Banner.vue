@@ -28,7 +28,7 @@ export default {
 
 <style>
 .banner {
-  background-color: #1669f8;
+  background-color: #1974D2;
   height: 70px;
   line-height: 70px;
   text-align: center;

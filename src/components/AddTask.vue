@@ -12,7 +12,7 @@
           </div>
         </div>
       </template>
-      
+
       <el-form :model="form" label-width="100" :rules="rules" ref="formRef">
         <el-form-item v-if="!editInfo" label="Title" prop="title">
           <el-input v-model="form.title" />
@@ -160,9 +160,9 @@ export default {
 .my-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: #1669f8;
+  background-color: #1974D2;
   color: white;
+  margin:-20px -35px 0px -20px;
 }
 .titleClass{
   font-size: 25px;
