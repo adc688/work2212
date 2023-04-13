@@ -34,10 +34,17 @@ export default {
     let dialogRef = ref(null);
     const tableData = ref([
       {
-        title: 'try1',
+        title: 'justATest',
         description: 'description1',
         deadline: '04/12/2023',
         priority: 'High',
+        completed: false,
+      },
+     {
+        title: 'test2',
+        description: 'description2',
+        deadline: '04/12/2023',
+        priority: 'Low',
         completed: false,
       },
     ]);
