@@ -53,7 +53,7 @@ export default {
     },
     deleteRow(row) {
       this.$message({
-        message: 'The task was deleted successfully',
+        message: 'The task is deleted successfully',
         type: 'success',
       });
       this.$emit('delete', row);

@@ -67,7 +67,7 @@ export default {
       title: [
         {
           required: true,
-          message: 'Please input title',
+          message: 'Title is required!',
           trigger: 'blur',
         },
         {
