@@ -1,15 +1,15 @@
 <template>
   <el-table :data="tableData" height="1000" style="width: 100%">
-    <el-table-column prop="title" label="Title" width="100" />
-    <el-table-column prop="description" label="Description" width="200" />
-    <el-table-column prop="deadline" label="Deadline" width="160"/>
-    <el-table-column prop="priority" label="Priority" />
-    <el-table-column prop="completed" label="Is Complete" width="160">
+    <el-table-column prop="title" label="Title" width="200" />
+    <el-table-column prop="description" label="Description" width="400" />
+    <el-table-column prop="deadline" label="Deadline" width="200"/>
+    <el-table-column prop="priority" label="Priority" width="200" />
+    <el-table-column prop="completed" label="Is Complete" width="200">
       <template #default="scope">
         <el-checkbox v-model="scope.row.completed" />
       </template>
     </el-table-column>
-    <el-table-column prop="action" width="200" label="Action">
+    <el-table-column prop="action"  label="Action">
       <template #default="scope">
   <div>
     <div>

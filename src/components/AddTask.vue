@@ -162,7 +162,8 @@ export default {
   flex-direction: row;
   background-color: #1974D2;
   color: white;
-  margin:-20px -37px -100px -20px;
+  margin: -20px -37px 0px -20px;
+  padding: 20px;
 }
 .titleClass{
   font-size: 25px;
